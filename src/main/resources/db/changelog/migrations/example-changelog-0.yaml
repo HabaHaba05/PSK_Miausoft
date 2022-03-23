@@ -1,0 +1,16 @@
+databaseChangeLog:
+  - changeSet:
+      id: MIAUS-1
+      author: Andrius Bertašius
+      comment: Liquibase table creation example
+      changes:
+        - createTable:
+            tableName: parcels
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
